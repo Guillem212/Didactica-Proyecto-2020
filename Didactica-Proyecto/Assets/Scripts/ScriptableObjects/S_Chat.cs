@@ -9,5 +9,4 @@ public class S_Chat : ScriptableObject
     public S_Messages lastMessage;
 
     public List<S_Messages> messages;
-    public string lastMessageTime;
 }
