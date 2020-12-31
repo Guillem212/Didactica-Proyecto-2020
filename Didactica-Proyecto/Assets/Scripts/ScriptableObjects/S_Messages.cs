@@ -6,9 +6,8 @@ public struct S_Messages
 {
     public string text;
     public string messageTime;
-
-    public bool isSendByPerson;
     public bool isActive;
+    public bool isSendByPerson;
 
-    //Faltara ver si aqui tambien cargamos el png del fonde del mensaje o que.
+    public Dictionary<int, S_Answers> answers;
 }
