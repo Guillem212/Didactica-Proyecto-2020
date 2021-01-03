@@ -14,7 +14,7 @@ public class XMLReader : MonoBehaviour
         Application = new Dictionary<int, S_Chat>();
         GetChats(ref Application);
 
-        foreach (var item in Application)
+       /* foreach (var item in Application)
         {
             Debug.Log(item.Value.person_name);
             foreach (var m in item.Value.messages)
@@ -25,7 +25,7 @@ public class XMLReader : MonoBehaviour
                     Debug.Log(a.Value.text);
                 }
             }
-        }
+        }*/
 
     }
 

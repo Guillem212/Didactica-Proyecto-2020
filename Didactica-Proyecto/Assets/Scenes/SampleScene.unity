@@ -480,6 +480,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
+      propertyPath: xmlReader
+      value: 
+      objectReference: {fileID: 519420030}
     - target: {fileID: 4479889626562665939, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
