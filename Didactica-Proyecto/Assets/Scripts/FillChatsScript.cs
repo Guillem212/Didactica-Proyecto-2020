@@ -17,20 +17,14 @@ public class FillChatsScript : MonoBehaviour
 
         foreach (var item in xmlReader.Application)
         {
-            Debug.Log(item.Value.person_name);
             chatContainer.transform.Find("Person_name").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.person_name;
             chatContainer.transform.Find("Last_Message").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.text;
             chatContainer.transform.Find("Has_Unread_Message").gameObject.SetActive(item.Value.unreadMessages);
             chatContainer.transform.Find("Last_Time").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.messageTime;
 
-            Instantiate(chatContainer, transform);
-            //chats.Add(chatContainer);
+            GameObject chat = Instantiate(chatContainer, transform);
+            chats.Add(chat);
         }
-
-       /* foreach (var item in chats)
-        {
-            Instantiate(item, transform);
-        }*/
     }
     void Start()
     {
