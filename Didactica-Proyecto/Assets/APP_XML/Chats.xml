@@ -29,4 +29,15 @@
         </Answer>
       </Message>
   </Person>
+  <Person id="3" name="Alfonso">
+    <Message id="1" isActive="false" isSendByPerson="true">
+      <Text id="1">Mare de deu, pareix que fa frescoreta eh?
+      </Text>
+      <Date id="2">
+        07:48
+      </Date>
+      <Answer id="1" isActive="false">
+      </Answer>
+    </Message>
+  </Person>
 </Application>
