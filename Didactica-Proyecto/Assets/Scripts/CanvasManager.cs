@@ -28,17 +28,14 @@ public class CanvasManager : MonoBehaviour
         app_Base.SetActive(!app_Base.activeInHierarchy);
         chat_Base.SetActive(!chat_Base.activeInHierarchy);
 
-        if (chat_Base.activeInHierarchy)
-        {
-            //Si estoy en un chat pues relleno con las movidas de su chat
-            FillChatWithPerson(name);
-            chat_Base.transform.Find("Header").transform.Find("Header_Name").GetComponent<TMPro.TextMeshProUGUI>().text = name;
-        }
+        //Si estoy en un chat pues relleno con las movidas de su chat
+        if (chat_Base.activeInHierarchy) FillChatWithPerson(name);
     }
 
     private void FillChatWithPerson(string name)
     {
         //Aqui se haria algo parecido al FillChats the FillChatsScript.cs
         //Lo hare proximamente
+        chat_Base.transform.Find("Header").transform.Find("Header_Name").GetComponent<TMPro.TextMeshProUGUI>().text = name;
     }
 }
