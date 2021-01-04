@@ -7,23 +7,20 @@
       <!--isSendByPerson = true -> Es mandado por la otra persona.-->
       <!--isSendByPerson = false -> Es mandado por ti / Esto es para los mensajes antiguos.-->
       <!--isActive determina si el mensaje se debe mostrar en la conversacion o no.-->
-        <Text id="1"> <!--Cuerpo del mensaje.-->
-Hi sweetie, are u awake?
+        <Text id="1">Hi sweetie, are u awake? <!--NO PONGAIS SALTOS DE LINEA EN LOS MENSAJES, PONEDLOS SEGUIDOS DEL <Text id="1"> QUE SI NO QUEDA FEOTE-->  <!--Cuerpo del mensaje.-->
         </Text>
         <Date id="2"> <!--Fecha del envio- Puede ser en formato dd/mm/aaaa o en hh:mm, dependiendo de cuando se envio.-->
 19/03/2020 
         </Date>
         <!--Aqui van las respuestas al mensaje, para hacer mensajes antiguos, pues dejais esyo vacio y ya-->
-        <Answer id="1" isActive="true">
-Yes mom, what's up?
+        <Answer id="1" isActive="true">Yes mom, what's up?
         </Answer>
       </Message>
     </Person>
     <!--Ejemplo 2-->
     <Person id="2" name="Love">
       <Message id="1" isActive="false" isSendByPerson="true"> 
-        <Text id="1">
-Fuck you!
+        <Text id="1">Fuck you!
         </Text>
         <Date id="2">
 23:48
