@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Alfonso
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
+  m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -400,8 +400,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\n        07:48\n      "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
+  m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -576,8 +576,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -131, y: -62.493}
-  m_SizeDelta: {x: 686.9636, y: 125.013504}
+  m_AnchoredPosition: {x: -131, y: -50.7}
+  m_SizeDelta: {x: 686.9636, y: 101.49849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8275434224050702010
 CanvasRenderer:
@@ -609,8 +609,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mare de deu, pareix que fa frescoreta eh?\n      "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
+  m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -1.570343}
+  m_margin: {x: 0, y: 0, z: 0, w: 24.768368}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
