@@ -47,6 +47,7 @@ public class XMLReader : MonoBehaviour
             id++;
             S_Chat chat;
             chat.person_name = person.person.Attribute("name").Value;
+            //chat.id = person.person.Attribute("id").Value; 
             chat.messages = GetPersonMessages(id);
             chat.unreadMessages = true;
             chat.lastMessage = chat.messages.Last().Value;

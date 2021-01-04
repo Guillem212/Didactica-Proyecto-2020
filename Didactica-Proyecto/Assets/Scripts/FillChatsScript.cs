@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TestTools;
+using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class FillChatsScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class FillChatsScript : MonoBehaviour
     public XMLReader xmlReader;
     private List<GameObject> chats;
     bool filled = false;
+    GameObject gm;
     // Start is called before the first frame update
 
     public void FillChats()
@@ -23,12 +25,16 @@ public class FillChatsScript : MonoBehaviour
             chatContainer.transform.Find("Last_Time").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.messageTime;
 
             GameObject chat = Instantiate(chatContainer, transform);
+
+            //Creates listener for each chat passing the name of hte person to hte function
+            chat.GetComponent<Button>().onClick.AddListener(delegate { gm.GetComponent<CanvasManager>().ChangeToNextCanvas(item.Value.person_name); });
+
             chats.Add(chat);
         }
     }
     void Start()
     {
-       
+        gm = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
