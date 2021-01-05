@@ -36,6 +36,7 @@ public class CanvasManager : MonoBehaviour
     {
         //Aqui se haria algo parecido al FillChats the FillChatsScript.cs
         //Lo hare proximamente
+        chat_Base.GetComponentInChildren<FillChatWithMessages>().FillChatWithMsg(name);
         chat_Base.transform.Find("Header").transform.Find("Header_Name").GetComponent<TMPro.TextMeshProUGUI>().text = name;
     }
 }
