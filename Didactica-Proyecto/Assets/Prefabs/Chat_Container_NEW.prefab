@@ -151,7 +151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8916262008176040201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -607,7 +607,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mare de deu, pareix que fa frescoreta eh?\n      "
+  m_text: "Pues r\xE9s vaig a vore si m'vaig a casa o que collons faig, blbalblbalblablablalbalbalbalbalblablalablalbalbalblablablablablablablalbalbablallablalab,
+    pardon, m'ha donat un ictus\n      "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}

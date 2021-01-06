@@ -15,7 +15,11 @@ public class FillChatsScript : MonoBehaviour
 
     public void FillChats()
     {
-        chats = new List<GameObject>();
+        chats.Clear();
+        foreach (Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
 
         foreach (var item in xmlReader.Application)
         {
@@ -28,13 +32,13 @@ public class FillChatsScript : MonoBehaviour
 
             //Creates listener for each chat passing the name of hte person to hte function
             chat.GetComponent<Button>().onClick.AddListener(delegate { gm.GetComponent<CanvasManager>().ChangeToNextCanvas(item.Value.person_name); });
-
             chats.Add(chat);
         }
     }
     void Start()
     {
         gm = GameObject.Find("GameManager");
+        chats = new List<GameObject>();
     }
 
     // Update is called once per frame
