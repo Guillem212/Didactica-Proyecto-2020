@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc537d8d60929f24f9c932b1dd65ffc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  app_Base: {fileID: 537298549}
+  app_Base: {fileID: 1803464499}
   chat_Base: {fileID: 814763882}
 --- !u!4 &133254188
 Transform:
@@ -264,11 +264,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &537298549 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4479889626733972721, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-  m_PrefabInstance: {fileID: 4479889627270417028}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &560897689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1607628604980598955, guid: 443ba742ecec2054fb90c0ee95d5c974, type: 3}
@@ -378,7 +373,6 @@ Transform:
 --- !u!1001 &1753390943
 PrefabInstance:
   m_ObjectHideFlags: 0
-<<<<<<< Updated upstream
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -522,20 +516,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4479889626733972721, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
   m_PrefabInstance: {fileID: 4479889627270417028}
   m_PrefabAsset: {fileID: 0}
-=======
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168004019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7578ccd99ff701a4db6d580a1f0e3f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  received_msg: {fileID: 625320026576799387, guid: 0d484bc3b3255434db37f044c6c7deec, type: 3}
-  your_msg: {fileID: 792525137330291096, guid: 2cffcaae9b968bc42a9154237eabe558, type: 3}
-  xmlReader: {fileID: 133254189}
->>>>>>> Stashed changes
 --- !u!1001 &1607628603503939034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -829,17 +809,13 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4479889626375321261, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4479889626375321262, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
       propertyPath: m_SizeDelta.x
       value: -1423
       objectReference: {fileID: 0}
     - target: {fileID: 4479889626375321262, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000104904175
+      value: -0.00005324934
       objectReference: {fileID: 0}
     - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
       propertyPath: xmlReader
@@ -849,26 +825,6 @@ PrefabInstance:
       propertyPath: chatContainer
       value: 
       objectReference: {fileID: 2825782745986976246, guid: b1a963056ad9ff344a8165635fda2129, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: 68bcefbb2a533704a998a94ff6ad1868, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 0c82be06bee69e2478f414000ed12700, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: ec4da8c6bd681d04eb2a6be3b2ca2759, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: ad6651374f6e9324da53c49c2a09c74e, type: 3}
     - target: {fileID: 4479889626562665939, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

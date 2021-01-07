@@ -6,8 +6,6 @@ using UnityEngine.Events;
 
 public class FillChatsScript : MonoBehaviour
 {
-    public Sprite[] faces;
-
     public GameObject chatContainer;
     public XMLReader xmlReader;
     private List<GameObject> chats;
@@ -25,13 +23,7 @@ public class FillChatsScript : MonoBehaviour
             chatContainer.transform.Find("Last_Message").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.text;
             chatContainer.transform.Find("Has_Unread_Message").gameObject.SetActive(item.Value.unreadMessages);
             chatContainer.transform.Find("Last_Time").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.messageTime;
-            foreach (var face in faces)
-            {
-                if(item.Value.person_name == face.name)
-                {
-                    chatContainer.transform.Find("Image").GetComponent<Image>().sprite = face;
-                }
-            }
+
             GameObject chat = Instantiate(chatContainer, transform);
 
             //Creates listener for each chat passing the name of hte person to hte function
