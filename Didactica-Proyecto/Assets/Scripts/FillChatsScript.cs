@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public class FillChatsScript : MonoBehaviour
 {
     public GameObject chatContainer;
-    public XMLReader xmlReader;
     private List<GameObject> chats;
     bool filled = false;
     GameObject gm;
@@ -21,7 +20,7 @@ public class FillChatsScript : MonoBehaviour
             GameObject.Destroy(child.gameObject);
         }
 
-        foreach (var item in xmlReader.Application)
+        foreach (var item in XMLReader.xmlReader.Application)
         {
             chatContainer.transform.Find("Person_name").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.person_name;
             chatContainer.transform.Find("Last_Message").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.text;
@@ -44,7 +43,7 @@ public class FillChatsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!filled && xmlReader!= null)
+        if(!filled && XMLReader.xmlReader != null)
         {
             FillChats();
             filled = true;

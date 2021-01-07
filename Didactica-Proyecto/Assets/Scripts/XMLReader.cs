@@ -6,27 +6,25 @@ using System.Xml.Linq;
 
 public class XMLReader : MonoBehaviour
 {
-
+    public static XMLReader xmlReader;
     public Dictionary<int, S_Chat> Application;
 
-    private void Start()
+    private void Awake()
     {
-        Application = new Dictionary<int, S_Chat>();
-        GetChats(ref Application);
-
-       /* foreach (var item in Application)
+        if (xmlReader == null)
         {
-            Debug.Log(item.Value.person_name);
-            foreach (var m in item.Value.messages)
-            {
-                Debug.Log(m.Value.text + " " + m.Value.messageTime);
-                foreach (var a in m.Value.answers)
-                {
-                    Debug.Log(a.Value.text);
-                }
-            }
-        }*/
+            xmlReader = this;
+            DontDestroyOnLoad(this.gameObject);
+            xmlReader.Application = new Dictionary<int, S_Chat>();
+            xmlReader.GetChats(ref Application);
+        }
+        else
+        {
+            Destroy(this);
+        }
 
+        //Application = new Dictionary<int, S_Chat>();
+        //GetChats(ref Application);
     }
 
     public void GetChats(ref Dictionary<int, S_Chat> application)

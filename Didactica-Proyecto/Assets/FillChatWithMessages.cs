@@ -9,7 +9,6 @@ public class FillChatWithMessages : MonoBehaviour
 
     [SerializeField] GameObject received_msg;
     [SerializeField] GameObject your_msg;
-    [SerializeField] XMLReader xmlReader;
 
 
     void Start()
@@ -26,12 +25,13 @@ public class FillChatWithMessages : MonoBehaviour
 
     public void FillChatWithMsg(string name)
     {
+        print(name);
         foreach (Transform child in transform) //Limpiar chat anterior
         {
-            GameObject.Destroy(child.gameObject);
+            Destroy(child.gameObject);
         }
 
-        foreach (var item in xmlReader.Application)
+        foreach (var item in XMLReader.xmlReader.Application)
         { 
             if (item.Value.person_name.Equals(name))
             {
@@ -49,8 +49,6 @@ public class FillChatWithMessages : MonoBehaviour
                         {
                             m_cont++;
                             m_cont_ch++;
-                            /*if (m_cont_ch == 29 && c.Equals(' ')) m_aux += "";
-                            else m_aux += c;*/
                             m_aux += (m_cont_ch == 29 && c.Equals(' ')) ? "" : c.ToString();
                             if (c.Equals(' ') || msginChat.Value.text.Length == m_cont) { modified_msg += m_aux; m_aux = ""; }
                             if (m_cont_ch > 28)
@@ -86,9 +84,6 @@ public class FillChatWithMessages : MonoBehaviour
                             {
                                 a_cont++;
                                 a_cont_ch++;
-                                /*
-                                if (a_cont_ch == 29 && c.Equals(' ')) a_aux += "";
-                                else a_aux += c;*/
                                 a_aux += (a_cont_ch == 29 && c.Equals(' ')) ? "" : c.ToString();
                                 if (c.Equals(' ') || ans.Value.text.Length == a_cont) { modified_ans += a_aux; a_aux = ""; }
                                 if (a_cont_ch > 28)
@@ -103,7 +98,6 @@ public class FillChatWithMessages : MonoBehaviour
 
                             your_msg.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = modified_ans;
                             GameObject msg_ans = Instantiate(your_msg, transform);
-                            print(modified_ans);
                             RectTransform rt_ans = msg_ans.transform.Find("bg_image").GetComponent<RectTransform>();
                             msg_ans.transform.Find("bg_image").GetComponent<RectTransform>().offsetMin = new Vector2(Mathf.Clamp(1200 - ans.Value.text.Length * WIDTH_PER_CHAR, 453, 1200), rt_ans.offsetMin.y);
                             msg_ans.GetComponent<RectTransform>().sizeDelta = new Vector2(msg_ans.GetComponent<RectTransform>().sizeDelta.x, 160 + HEIGHT_PER_LINE * a_cont_sl);
@@ -115,7 +109,7 @@ public class FillChatWithMessages : MonoBehaviour
                 //Chat readed
                 S_Chat aux_chat = item.Value;
                 aux_chat.unreadMessages = false;
-                xmlReader.Application[item.Key] = aux_chat;
+                XMLReader.xmlReader.Application[item.Key] = aux_chat;
                 return;
             }
 

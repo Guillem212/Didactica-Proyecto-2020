@@ -9,6 +9,10 @@ public class CanvasManager : MonoBehaviour
     public GameObject app_Base;
     public GameObject chat_Base;
 
+    private GameObject sendContainer;
+    private GameObject sendContainerOpened;
+    private float scrollClosed;
+
     private void Awake()
     {
         if (canvasManager == null)
@@ -20,6 +24,11 @@ public class CanvasManager : MonoBehaviour
         {
             Destroy(this);
         }
+    }
+    private void Start()
+    {
+        sendContainer = chat_Base.transform.Find("SendContainer").gameObject;
+        sendContainerOpened = chat_Base.transform.Find("SendContainerOpened").gameObject;
     }
 
     public void ChangeToNextCanvas(string name)
@@ -37,5 +46,25 @@ public class CanvasManager : MonoBehaviour
     {
         chat_Base.transform.Find("Header").transform.Find("Header_Name").GetComponent<TMPro.TextMeshProUGUI>().text = name;
         chat_Base.GetComponentInChildren<FillChatWithMessages>().FillChatWithMsg(name);
+    }
+
+    public void OpenCloseSendContainer()
+    {
+
+        sendContainer.SetActive(!sendContainer.activeInHierarchy);
+        sendContainerOpened.SetActive(!sendContainerOpened.activeInHierarchy);
+
+        if (sendContainerOpened.activeInHierarchy)
+        {
+            sendContainerOpened.GetComponentInChildren<FillAnswers>().FillAnswersContent();
+            RectTransform scrollViewRect = chat_Base.transform.Find("Scroll_View").GetComponent<RectTransform>();
+            scrollClosed = scrollViewRect.offsetMin.y;
+            scrollViewRect.offsetMin = new Vector2(scrollViewRect.offsetMin.x, -(sendContainerOpened.GetComponent<RectTransform>().position.y + 100 - 2440));
+        }
+        else
+        {
+            RectTransform scrollViewRect = chat_Base.transform.Find("Scroll_View").GetComponent<RectTransform>();
+            scrollViewRect.offsetMin = new Vector2(scrollViewRect.offsetMin.x, scrollClosed);
+        }
     }
 }
