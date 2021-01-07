@@ -5,19 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public Animator transition;
+    public GameObject menu;
+    public GameObject appBase;
     public void StartGame(string sceneName) //El nombre se le pasa desde el botón
     {
-        StartCoroutine(LoadLevel(sceneName));
-    }
-
-    IEnumerator LoadLevel(string sceneName)
-    {
-        transition.SetTrigger("Start");
-
-        yield return new WaitForSeconds(1);
-
-        SceneManager.LoadScene(sceneName);
+        appBase.SetActive(true);
+        menu.SetActive(false);
     }
 
     public void ExitGame()
