@@ -141,11 +141,17 @@ public class XMLReader : MonoBehaviour
                             id++;
                             S_Answers ans;
                             ans.text = a.Value;
-
-                            if (a.Attribute("isActive").Value == "true")
+                            if (ans.text.Equals(""))
+                            {
                                 ans.isSelected = true;
+                            }
                             else
-                                ans.isSelected = false;
+                            {
+                                if (a.Attribute("isActive").Value == "true")
+                                    ans.isSelected = true;
+                                else
+                                    ans.isSelected = false;
+                            }
 
                             answersList.Add(id, ans);
                         }     

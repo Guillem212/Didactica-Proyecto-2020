@@ -66,7 +66,7 @@
       <Date id="2">17/03/2020</Date>
       <Answer id="1" isActive="false"></Answer>
     </Message>
-    <Message id="12" isActive="false" isSendByPerson="true">
+    <Message id="12" isActive="true" isSendByPerson="true">
       <Text id="1">Recuerda también quitarte los zapatos antes de entrar en tu piso y lavar toda la ropa que es super importante.</Text>
       <Date id="2">17/03/2020</Date>
       <Answer id="1" isActive="false">Ya lo sé mamá, no hace falta que me lo digas</Answer>
