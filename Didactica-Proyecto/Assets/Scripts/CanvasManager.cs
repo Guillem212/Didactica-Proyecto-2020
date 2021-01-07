@@ -65,6 +65,7 @@ public class CanvasManager : MonoBehaviour
         {
             RectTransform scrollViewRect = chat_Base.transform.Find("Scroll_View").GetComponent<RectTransform>();
             scrollViewRect.offsetMin = new Vector2(scrollViewRect.offsetMin.x, scrollClosed);
+            sendContainerOpened.GetComponentInChildren<FillAnswers>().SendAnswer();
         }
     }
 }

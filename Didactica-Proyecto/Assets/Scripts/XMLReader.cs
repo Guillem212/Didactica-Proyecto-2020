@@ -148,7 +148,7 @@ public class XMLReader : MonoBehaviour
                                 ans.isSelected = false;
 
                             answersList.Add(id, ans);
-                        }
+                        }     
                     }
                 }
             }

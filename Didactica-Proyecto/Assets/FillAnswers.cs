@@ -13,27 +13,54 @@ public class FillAnswers : MonoBehaviour
     [SerializeField] GameObject content;
     [SerializeField] TMPro.TextMeshProUGUI person;
 
-    public void SendAnswer(int msg_k, int ans_k)
+    int msg_KEY = -1;
+    int ans_KEY = -1;
+
+    public void SetKeys(int msg_k, int ans_k)
     {
-        foreach (var item in XMLReader.xmlReader.Application)
+        msg_KEY = msg_k;
+        ans_KEY = ans_k;
+    }
+
+    public void SendAnswer()
+    {
+        if(msg_KEY != -1 && ans_KEY != -1)
         {
-            if (item.Value.person_name.Equals(person.text))
+            foreach (var item in XMLReader.xmlReader.Application)
             {
-                S_Answers aux_ans = item.Value.messages[msg_k].answers[ans_k];
-                aux_ans.isSelected = true;
-                item.Value.messages[msg_k].answers[ans_k] = aux_ans;
+                if (item.Value.person_name.Equals(person.text))
+                {
+                    S_Answers aux_ans = item.Value.messages[msg_KEY].answers[ans_KEY];
+                    aux_ans.isSelected = true;
+                    item.Value.messages[msg_KEY].answers[ans_KEY] = aux_ans;
 
-                //for(int i = msg_k + 1; item.Value.messages[i].answers[0].text.Length > 0 && i < item.Value.messages.Count - 1; i++)
-                //{
-                    S_Messages aux_msg = item.Value.messages[msg_k + 1];
+                    S_Messages aux_msg = item.Value.messages[msg_KEY+1];
                     aux_msg.isActive = true;
-                    item.Value.messages[msg_k + 1] = aux_msg;
-                //}
+                    item.Value.messages[msg_KEY+1] = aux_msg;
 
-                break;
-            }     
+                    /*int cont = msg_KEY;
+                    while (item.Value.messages[cont].answers.Count < 1 && cont < item.Value.messages.Count - 1)
+                    {
+                        S_Messages aux_msg = item.Value.messages[cont];
+                        aux_msg.isActive = true;
+                        item.Value.messages[cont++] = aux_msg;
+                    }*/
+                    /*int i = 0;
+                    for (i = msg_KEY + 1; item.Value.messages[i].answers.Count > 0 && i < item.Value.messages.Count - 1; i++)
+                    {
+                        S_Messages aux_msg = item.Value.messages[i];
+                        aux_msg.isActive = true;
+                        item.Value.messages[i] = aux_msg;
+                    }
+                    S_Messages aux = item.Value.messages[i-1];
+                    aux.isActive = true;
+                    item.Value.messages[i-1] = aux;*/
+
+                    break;
+                }
+            }
+            content.GetComponent<FillChatWithMessages>().FillChatWithMsg(person.text);
         }
-        content.GetComponent<FillChatWithMessages>().FillChatWithMsg(person.text);
     }
     public void FillAnswersContent()
     {
@@ -77,7 +104,7 @@ public class FillAnswers : MonoBehaviour
 
                             answer.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = modified_msg;
                             GameObject m = Instantiate(answer, transform);
-                            m.GetComponent<Button>().onClick.AddListener(delegate { SendAnswer(msg.Key-1, ans.Key); });
+                            m.GetComponent<Button>().onClick.AddListener(delegate { SetKeys(msg.Key-1, ans.Key); });
                             
                             m.GetComponent<RectTransform>().sizeDelta = new Vector2(m.GetComponent<RectTransform>().sizeDelta.x, 215 + HEIGHT_PER_LINE * m_cont_sl);
 

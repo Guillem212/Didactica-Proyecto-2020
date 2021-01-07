@@ -64,7 +64,8 @@
     <Message id="11" isActive="true" isSendByPerson="true">
       <Text id="1">Bueno, por si acaso, nunca se sabe</Text>
       <Date id="2">17/03/2020</Date>
-      <Answer id="1" isActive="false"></Answer>
+      <Answer id="1" isActive="false">holi holi holi holi holi holiholi holiholiholiholiholiholiholi</Answer> <!--CORREGIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIR-->
+      <Answer id="2" isActive="false">holo</Answer>
     </Message>
     <Message id="12" isActive="false" isSendByPerson="true">
       <Text id="1">Recuerda también quitarte los zapatos antes de entrar en tu piso y lavar toda la ropa que es super importante.</Text>
@@ -325,7 +326,7 @@
         <Date id="2">13/03/2020</Date>
         <Answer id="1" isActive="false"></Answer>
       </Message>
-      <Message id="20" isActive="false" isSendByPerson="true">
+      <Message id="20" isActive="true" isSendByPerson="true">
         <Text id="1">La cantidad de trabajo poco a poco va creciendo, pero por el resto bien :)</Text>
         <Date id="2">13/03/2020</Date>
         <Answer id="1" isActive="false">Perdona por no preguntarte antes, estaba ocupado. Me alegro de que estés guay jeje</Answer>
@@ -725,7 +726,7 @@
       <Answer id="1" isActive="false"></Answer>
     </Message>
     <Message id="12" isActive="true" isSendByPerson="true">
-      <Text id="1">No se lo cree ni é</Text>
+      <Text id="1">No se lo cree ni él</Text>
       <Date id="2">14/03/2020</Date>
       <Answer id="1" isActive="false">No me lo puedo creer tío, qué putada</Answer>
       <Answer id="2" isActive="false">Y no te devuelven el dinero ni nada?</Answer>
