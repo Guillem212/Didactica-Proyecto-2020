@@ -1,65 +1,1042 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Application id="1">
   <!--Cada persona tiene su ID y su nombre, el nombre es mas para nosotros encontrarlos facil que para el codigo del juego.-->
-  <Person id="1" name="AAMom">
+  <Person id="1" name="AAMama">
     <!--Cada mensaje tiene un id tambien, el segundo valor es un booleano que dice si el mensaje es tuyo o de la persona con la que habalas.-->
       <Message id="1" isActive="true" isSendByPerson="true"> 
       <!--isSendByPerson = true -> Es mandado por la otra persona.-->
       <!--isSendByPerson = false -> Es mandado por ti / Esto es para los mensajes antiguos.-->
       <!--isActive determina si el mensaje se debe mostrar en la conversacion o no.-->
-        <Text id="1">Hi sweetie, are u awake? esternocleidomastoideo bla bla bla bla bla bla blablablabla</Text> <!--NO PONGAIS SALTOS DE LINEA EN LOS MENSAJES, PONEDLOS SEGUIDOS DEL <Text id="1"> QUE SI NO QUEDA FEOTE-->  <!--Cuerpo del mensaje.-->        
-        <Date id="2"> <!--Fecha del envio- Puede ser en formato dd/mm/aaaa o en hh:mm, dependiendo de cuando se envio.-->
-19/03/2020 
+        <Text id="1">Buenas cariño, qué haces?</Text> <!--NO PONGAIS SALTOS DE LINEA EN LOS MENSAJES, PONEDLOS SEGUIDOS DEL <Text id="1"> QUE SI NO QUEDA FEOTE-->  <!--Cuerpo del mensaje.-->        
+        <Date id="2">05/03/2020 <!--Fecha del envio- Puede ser en formato dd/mm/aaaa o en hh:mm, dependiendo de cuando se envio.--> 
         </Date>
         <!--Aqui van las respuestas al mensaje, para hacer mensajes antiguos, pues dejais esyo vacio y ya-->
-        <Answer id="1" isActive="true">Yes mom, what's up?</Answer> <!--  Cerradlo todo en la misma liena como aqui-->
-        <Answer id="2" isActive="true">I'm not oging to talk to you</Answer>
+        <Answer id="1" isActive="false"></Answer> <!--  Cerradlo todo en la misma liena como aqui-->
+        <Answer id="2" isActive="false"></Answer>
       </Message>
-    <Message id="2" isActive="true" isSendByPerson="true">
+    <Message id="2" isActive="true" isSendByPerson="false">
       <!--isSendByPerson = true -> Es mandado por la otra persona.-->
       <!--isSendByPerson = false -> Es mandado por ti / Esto es para los mensajes antiguos.-->
       <!--isActive determina si el mensaje se debe mostrar en la conversacion o no.-->
-      <Text id="1">Higgg? <!--NO PONGAIS SALTOS DE LINEA EN LOS MENSAJES, PONEDLOS SEGUIDOS DEL <Text id="1"> QUE SI NO QUEDA FEOTE-->  <!--Cuerpo del mensaje.-->
+      <Text id="1">Pues acabo de salir de trabajar <!--NO PONGAIS SALTOS DE LINEA EN LOS MENSAJES, PONEDLOS SEGUIDOS DEL <Text id="1"> QUE SI NO QUEDA FEOTE-->  <!--Cuerpo del mensaje.-->
       </Text>
       <Date id="2">
         <!--Fecha del envio- Puede ser en formato dd/mm/aaaa o en hh:mm, dependiendo de cuando se envio.-->
-        19/03/2020
+        05/03/2020
       </Date>
       <!--Aqui van las respuestas al mensaje, para hacer mensajes antiguos, pues dejais esyo vacio y ya-->
-      <Answer id="1" isActive="true">Yes wrtqetew<!---->
-      </Answer>
+      <Answer id="1" isActive="true"></Answer>
     </Message>
+    <Message id="3" isActive="true" isSendByPerson="false">
+      <Text id="1">y vosotros cómo estáis?</Text>
+      <Date id="2">05/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="4" isActive="true" isSendByPerson="true">
+      <Text id="1">Bien todo bien, tu padre como siempre</Text>
+      <Date id="2">05/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="5" isActive="true" isSendByPerson="false">
+      <Text id="1">Bueno poco a poco</Text>
+      <Date id="2">16/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="6" isActive="true" isSendByPerson="true">
+      <Text id="1">Descansa cariño 💋❤</Text>
+      <Date id="2">05/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="7" isActive="true" isSendByPerson="false">
+      <Text id="1">Buenas nochees</Text>
+      <Date id="2">05/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="8" isActive="true" isSendByPerson="true">
+      <Text id="1">Has visto las noticias?</Text>
+      <Date id="2">12/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="9" isActive="true" isSendByPerson="true">
+      <Text id="1">Han declarado el estado de alarma. </Text>
+      <Date id="2">12/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="10" isActive="true" isSendByPerson="true">
+      <Text id="1">Serán 2 semanas dicen, te han dicho algo del trabajo?</Text>
+      <Date id="2">12/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="11" isActive="true" isSendByPerson="false">
+      <Text id="1">Pues por ahora no, ya te iré diciendo.</Text>
+      <Date id="2">12/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="12" isActive="true" isSendByPerson="true">
+      <Text id="1">Has ido a comprar ya?</Text>
+      <Date id="2">16/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="13" isActive="true" isSendByPerson="true">
+      <Text id="1">Tu padre y yo hemos hecho la compra para todo el mes por si acaso
+        que la gente se esta volviendo loca
+      </Text>
+      <!--aquí se supone que manda foto de 200 millones de rollos de papel higiénico-->
+      <Date id="2">16/03/2020</Date>
+      <Answer id="1" isActive="false">Mamá creo que te pasaste un poco… Sabes que el papel higiénico no se acaba? Al día siguiente reponen jajajaj</Answer>
+      <Answer id="2" isActive="false">Qué bruta eres. Esto no creo que dure tanto, creo que exageran un poco.</Answer>
+    </Message>
+    <Message id="14" isActive="true" isSendByPerson="true">
+      <Text id="1">Te hago videollamada</Text>
+      <Date id="2">16/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="15" isActive="true" isSendByPerson="true">
+      <Text id="1">Te he enviado un paquete de cien mascarillas a casa para cuando vayas a hacer la compra</Text>
+      <Date id="2">17/03/2020</Date>
+      <Answer id="1" isActive="false">No necesito tantas mascarillas si no puedo salir de casa mamá…</Answer>
+    </Message>
+    <Message id="16" isActive="true" isSendByPerson="true">
+      <Text id="1">Bueno, por si acaso, nunca se sabe</Text>
+      <Date id="2">17/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="17" isActive="true" isSendByPerson="true">
+      <Text id="1">Recuerda también quitarte los zapatos antes de entrar en tu piso y lavar toda la ropa que es super importante.</Text>
+      <Date id="2">17/03/2020</Date>
+      <Answer id="1" isActive="false">Ya lo sé mamá, no hace falta que me lo digas</Answer>
+      <Answer id="2" isActive="false">No creo que eso sirva de nada, si me contagio no creo que sea por eso</Answer>
+    </Message>
+    <Message id="18" isActive="true" isSendByPerson="true">
+      <Text id="1">Bueno tú hazme caso y ya está que yo siempre tengo razón</Text>
+      <Date id="2">17/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="19" isActive="true" isSendByPerson="true">
+      <Text id="1">Buenos días hijo, como estas? te encuentras bien?</Text>
+      <Date id="2">24/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="20" isActive="true" isSendByPerson="true">
+      <Text id="1">yo me estoy encontrando algo mal, igual he cogido el bicho</Text>
+      <Date id="2">24/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="21" isActive="true" isSendByPerson="true">
+      <Text id="1">le estoy dando a tu padre de comer con otros platos y cubiertos por si acaso</Text>
+      <Date id="2">24/03/2020</Date>
+      <Answer id="1" isActive="false">Bueno puede ser cualquier cosa, pero por si acaso haces bien. </Answer>
+      <Answer id="2" isActive="false">Como eres tú seguro que se lo está inventando tu cerebro. Tómate unos canelones que tanto te gustan y verás como se te va todo</Answer>
+      <Answer id="3" isActive="false">Si ves que vas a peor no dudes en llamar al médico, que puede parecer una gripe normal, es engañoso</Answer>
+    </Message>
+    <Message id="22" isActive="true" isSendByPerson="true">
+      <Text id="1">Está bien</Text>
+      <Date id="2">24/03/2020</Date>
+      <Answer id="1" isActive="false">Si quieres mañana hacemos videollamada que hoy estoy ocupado</Answer>
+    </Message>
+    <Message id="23" isActive="true" isSendByPerson="true">
+      <Text id="1">Vale hijo, pues mañana hablamos, un beso.</Text>
+      <Date id="2">24/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="24" isActive="true" isSendByPerson="true">
+      <Text id="1">Buenas cariño que tal estas? Te llamé el otro día varias veces y no me contestaste, te pasa algo?</Text>
+      <Date id="2">03/04/2020</Date>
+      <!--Aquí se supone que la madre nunca llega a leer el mensaje que le mandes-->
+      <Answer id="1" isActive="false">Hace unas semanas que lo dejé con Alex</Answer>
+      <Answer id="2" isActive="false">Pues tuve recientemente una discusión con Alfoso y creo que se enfadó mucho</Answer>
+      <Answer id="3" isActive="false">Nada, simplemente estaba ocupado y no me apetecía hablar pero se me olvidó llamarte más tarde</Answer>
+    </Message>
+    <Message id="25" isActive="true" isSendByPerson="true">
+      <Text id="1">Hola. El otro día con los nervios de que no me contestabas se me cayó el móvil al váter y dejó de funcionar. Estoy un poco torpe.</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false">Es que tienes que relajarte un poco, puedes llamar a un psicólogo por teléfono y que te ayude algo</Answer>
+      <Answer id="2" isActive="false">Qué desastre, intenta distraerte con otras cosas, no siempre voy a estar para atenderte cuando tú quieras</Answer>
+    </Message>
+    <Message id="26" isActive="true" isSendByPerson="true">
+      <Text id="1">Vale hijo, es que la situación con todo esto me supera, no estoy preparada para todo y tu padre no ayuda mucho…</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false">Bueno ya sabes cómo es papá. Un beso</Answer>
+      <Answer id="2" isActive="false">Perdón si sonó duro, no es mi mejor momento tampoco. Te quiero</Answer>
+      <Answer id="3" isActive="false">Vale mamá, cuídate mucho. Ya hablamos.</Answer>
+    </Message>
+    <Message id="27" isActive="true" isSendByPerson="true">
+      <Text id="1">Hola. Ya te olvidaste de tu madre.</Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="28" isActive="true" isSendByPerson="true">
+      <Text id="1">No te estarás viendo con Alex no?</Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="29" isActive="true" isSendByPerson="true">
+      <Text id="1">Que ella trabaja en el hospital, como te pegue algo ya veras</Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="30" isActive="true" isSendByPerson="true">
+      <Text id="1">Me voy a enfadar mucho contigo</Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="31" isActive="true" isSendByPerson="true">
+      <Text id="1">Tienes que ser responsables ya la veras cuando se pueda.</Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false">Cortamos hace nada, así que no, no nos estamos viendo</Answer>
+    </Message>
+    <Message id="32" isActive="true" isSendByPerson="true">
+      <Text id="1">Perdón, no lo sabía.</Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="33" isActive="true" isSendByPerson="true">
+      <Text id="1">Quieres hablar conmigo?</Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false">No me apetece ahora, en otro momento. Pero gracias por preocuparte</Answer>
+      <Answer id="2" isActive="false">Ya lo tengo superado, pero sí que la echo de menos. La situación era muy difícil como para seguir juntos sin poder vernos.</Answer>
+      <Answer id="3" isActive="false">Es complicado, tampoco tengo mucho de qué hablar. Aprecio que te preocupes.</Answer>
+    </Message>
+    <Message id="34" isActive="true" isSendByPerson="true">
+      <Text id="1">Debe de ser complicado estar solo y tener que pasar por todo esto. Esperemos que dentro de poco se acabe todo. Yo solo quiero lo mejor para ti, ya lo sabes. Un beso
+      </Text>
+      <Date id="2">20/04/2020</Date>
+      <Answer id="1" isActive="false">Un beso.</Answer>
+      <Answer id="2" isActive="false">Igualmente, te quiero mucho</Answer>
+    </Message>
+    <Message id="35" isActive="true" isSendByPerson="true">
+      <Text id="1">Buenas cariño, aquí han subido mucho los casos</Text>
+      <Date id="2">08/05/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="36" isActive="true" isSendByPerson="true">
+      <Text id="1">Estoy limpiando la casa todos los días por si acaso</Text>
+      <Date id="2">08/05/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="37" isActive="true" isSendByPerson="true">
+      <Text id="1">Cada vez estoy peor, entre tu padre y el bicho este</Text>
+      <Date id="2">08/05/2020</Date>
+      <Answer id="1" isActive="false">Ya hablamos esto el otro día, haz ejercicio o ponte a hablar con las amigas, cualquier cosa para distraerte vale.</Answer>
+      <Answer id="2" isActive="false">¿Qué le pasa ahora a papá? Si el no aporta nada a la situación intenta ir tú por tu cuenta.</Answer>
+      <Answer id="3" isActive="false">Peor en qué sentido? No paras de escribirme y siento presión en contestarte cuanto antes, me agobia.</Answer>
+    </Message>
+    <Message id="38" isActive="true" isSendByPerson="true">
+      <Text id="1">Es que hijo, tu padre lo único que hace es quejarse y no colabora en casa, pero tampoco le puedo pedir mucho al pobre después por lo que pasó. Pero es que yo necesito apoyo de algún lado, no puedo sola con todo esto.</Text>
+      <Date id="2">08/05/2020</Date>
+      <Answer id="1" isActive="false">Mamá si necesitas ayuda solo tienes que decírmelo, aunque seas pesada yo estoy aquí para ti</Answer>
+      <Answer id="2" isActive="false">Mamá si necesitas ayuda no dudes en acudir a mi, pero mejor tratar con un profesional, te quiero mil</Answer>
+      <Answer id="3" isActive="false">Peor en qué sentido? No paras de escribirme y siento presión en contestarte cuanto antes, me agobia.</Answer>
+    </Message>
+    <Message id="39" isActive="true" isSendByPerson="true">
+      <Text id="1">Gracias hijo, te quiero mucho. No quiero molestarte más, además tengo que hacer limpieza general de la casa. Un abrazo muy fuerte de tu madre ♡♡♡♡♡♡♡♡</Text>
+      <Date id="2">08/05/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="40" isActive="true" isSendByPerson="true">
+      <Text id="1">Cariño me he enterado de lo que le ha pasado a Alfonso</Text>
+      <Date id="2">23/05/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="41" isActive="true" isSendByPerson="true">
+      <Text id="1">Cómo te encuentras?</Text>
+      <Date id="2">23/05/2020</Date>
+      <Answer id="1" isActive="false">Estoy bien, hace unas semanas que perdimos contacto. Me cogió por sorpresa pero lo estoy superando. No tienes que preocuparte.</Answer>
+      <Answer id="2" isActive="false">Pues cómo crees que voy a estar? La verdad es que no tengo cosas con las que distraerme y me ha pillado por sorpresa, no pienso en otra cosa</Answer>
+      <Answer id="3" isActive="false">Tengo aún que gestionar mis emociones. Estoy entrando en un bucle de malestar y prefiero estar conmigo mismo y pensar. No quiero enrollarte mucho, estoy bien, sin más</Answer>
+    </Message>
+    <Message id="42" isActive="true" isSendByPerson="true">
+      <Text id="1">Bueno hijo ya sabes que para lo que quieras yo estoy aquí. Dentro de poco podremos volver a vernos, no queda mucho. Sé paciente y prudente te quiero mucho</Text>
+      <Date id="2">23/05/2020</Date>
+      <Answer id="1" isActive="false">Si quieres podemos hacer videollamada este finde</Answer>
+      <Answer id="2" isActive="false">Ya dentro de poco podré volver a casa, tengo ganas de verte.</Answer>
+    </Message>
+    
     </Person>
-    <!--Ejemplo 2-->
+  
+  
+  
+  
+  
+  
+    <!--PAREJA-->
+  
+  
+  
+  
     <Person id="2" name="Love">
       <Message id="1" isActive="false" isSendByPerson="true"> 
-        <Text id="1">Fuck you!<!---->
-        </Text>
-        <Date id="2">
-23:48
-        </Date>
-        <Answer id="1" isActive="false">no you<!---->
-        </Answer>
+        <Text id="1">15 días cariño</Text>
+        <Date id="2">06/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="2" isActive="false" isSendByPerson="true">
+        <Text id="1">15 días y estaremos en Tenerife</Text>
+        <Date id="2">06/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="3" isActive="false" isSendByPerson="true">
+        <Text id="1">Todas nuestras preocupaciones serán cuánto tiempo vamos a pasar en la playa, que vamos a comer,...¿no te hace ilusión?</Text>
+        <Date id="2">06/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="4" isActive="false" isSendByPerson="false">
+        <Text id="1"> Ya ni me acordaba, menos mal que lo has mencionado, ahora tengo más ganas.</Text>
+        <Date id="2">06/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="5" isActive="false" isSendByPerson="true">
+        <Text id="1">¿Pero cómo que no te acordabas? Si es que te cogía y te zarandeaba. ¿Cómo demonios se te ha olvidado si llevamos hablando de esto meses?</Text>
+        <Date id="2">06/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="6" isActive="false" isSendByPerson="true">
+        <Text id="1">Ahhhhh</Text>
+        <Date id="2">06/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="7" isActive="false" isSendByPerson="true">
+        <Text id="1">Nos vemos cuando acabe, que tengo que entrar al curro, chao</Text>
+        <Date id="2">06/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="8" isActive="false" isSendByPerson="true">
+        <Text id="1">Hey</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="9" isActive="false" isSendByPerson="true">
+        <Text id="1">Desde arriba nos han dicho que nos vayamos preparando, que esto del Covid tiene pinta que puede golpear muy fuerte</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="10" isActive="false" isSendByPerson="true">
+        <Text id="1">Me han dicho que cancele el viaje que teníamos planeado</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="11" isActive="false" isSendByPerson="true">
+        <Text id="1">Y yo me quiero enrollar en una manta muy fuerte y dormir</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="12" isActive="false" isSendByPerson="true">
+        <Text id="1">Y no levantarme</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="13" isActive="false" isSendByPerson="false">
+        <Text id="1">No me lo creo… Qué mala suerte tenemos. Intenta animarte escuchando música como haces siempre. ¿Quieres que te llame y te doy ánimos? :D</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="14" isActive="false" isSendByPerson="false">
+        <Text id="1">No tienes que preocuparte que todo esto se soluciona rápido seguro</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="15" isActive="false" isSendByPerson="true">
+        <Text id="1">Pero es que luego encima</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="16" isActive="false" isSendByPerson="true">
+        <Text id="1">Pero es que luego encima</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="17" isActive="false" isSendByPerson="true">
+        <Text id="1">nos piden que nos desinfectemos las manos, que cambiemos de vestimenta con frecuencia, que utilicemos las mascarillas siempre que no podamos mantener los 2 metros de seguridad,...</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="18" isActive="false" isSendByPerson="true">
+        <Text id="1">y no dan nada. Ni siquiera mascarillas. ¿Cómo se supone que voy a cuidar de un enfermo a 2 metros?</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="19" isActive="false" isSendByPerson="true">
+        <Text id="1">Las mascarillas que tenemos como mucho las podemos utilizar 4 horas</Text>
+        <Date id="2">09/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="20" isActive="false" isSendByPerson="true">
+        <Text id="1">Hey cari ¿Qué tal te va el día?</Text>
+        <Date id="2">13/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="21" isActive="false" isSendByPerson="true">
+        <Text id="1">Aquí las luces naranjas han roto la monotonía de la consulta.</Text>
+        <Date id="2">13/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="22" isActive="false" isSendByPerson="true">
+        <Text id="1">Salió de la ambulancia un hombre de unos 50 años sobre una camilla, costaba creer que pudiese respirar</Text>
+        <Date id="2">13/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="23" isActive="false" isSendByPerson="true">
+        <Text id="1">Al parecer llevaba ya yendo a peor un par de días. Según la mujer, el hombre estaba convencido de que no era más que un constipado.</Text>
+        <Date id="2">13/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="24" isActive="false" isSendByPerson="true">
+        <Text id="1">La cantidad de trabajo poco a poco va creciendo, pero por el resto bien :)</Text>
+        <Date id="2">13/03/2020</Date>
+        <Answer id="1" isActive="false">Perdona por no preguntarte antes, estaba ocupado. Me alegro de que estés guay jeje</Answer>
+      </Message>
+      <Message id="25" isActive="false" isSendByPerson="true">
+        <Text id="1">Hola</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="26" isActive="false" isSendByPerson="true">
+        <Text id="1">No me esperaba volver tan pronto al gimnasio</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="27" isActive="false" isSendByPerson="true">
+        <Text id="1">Y menos por estas razones</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false">¿Qué pasa?</Answer>
+      </Message>
+      <Message id="28" isActive="false" isSendByPerson="true">
+        <Text id="1">La UCI no da abasto</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="29" isActive="false" isSendByPerson="true">
+        <Text id="1">Dentro de poco no va a caber más gente</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="30" isActive="false" isSendByPerson="true">
+        <Text id="1">Así que toca preparar el gimnasio para nuevos pacientes</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="31" isActive="false" isSendByPerson="true">
+        <Text id="1">Y el resto o están ocupados o están en cuarentena así que me toca hacerlo a mí</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="32" isActive="false" isSendByPerson="true">
+        <Text id="1">Antes de ir a hacer mi guardi</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false">Deberías comentar que tú no puedes con todo eso, no es trabajo para una sola persona</Answer>
+        <Answer id="2" isActive="false">Toca apechugar en estas situaciones, sé que puedes con eso y más jejeje</Answer>
+        <Answer id="3" isActive="false">Tampoco creo que sea para tanto, además seguro que en nada acaba todo esto, es una tontería</Answer>
+      </Message>
+      <Message id="33" isActive="false" isSendByPerson="true">
+        <Text id="1">Ya... Bueno...</Text>
+        <Date id="2">17/03/2020</Date>
+        <Answer id="1" isActive="false">
+          Pero bueno ya sabes que para cualquier cosa me tienes aquí aunque no estemos físicamente juntos</Answer>
+        <Answer id="2" isActive="false">No te lo tomes a pecho aunque parezca que estoy siendo duro contigo</Answer>
+        <Answer id="3" isActive="false">Y si ves que no puedes más tómate un descanso y listo</Answer>
+      </Message>
+      <Message id="34" isActive="false" isSendByPerson="true">
+        <Text id="1">Te quedaste a gusto con lo que dijiste ayer ¿no? No te contesté porque estaba agobiada por el trabajo y quería despejarme un poco, pero joder tremenda forma de ayudarme con lo que tengo encima</Text>
+        <Date id="2">18/03/2020</Date>
+        <Answer id="1" isActive="false">Lo siento muchísimo!! Es que estaba pendiente de mi madre, que ya sabes como es… Te prometo que te lo compensaré cuando nos volvamos a ver</Answer>
+        <Answer id="2" isActive="false">Bueno tampoco creo que fuera para tanto, pero si te molestó perdóname, no era mi intención, solo quiero lo mejor para ti</Answer>
+        <Answer id="3" isActive="false">Me pareció raro que no me contestaras y supuse que es que estabas ocupada, te iba a preguntar qué tal hoy. Perdóname, no fueron las mejores maneras</Answer>
+      </Message>
+      <Message id="35" isActive="false" isSendByPerson="true">
+        <Text id="1">Lo siento yo también, creo que me he pasado un poco. Es que estoy harta de lo mal que va todo y todo el trabajo, es un no parar</Text>
+        <Date id="2">18/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="36" isActive="false" isSendByPerson="true">
+        <Text id="1">No te imaginas lo que me he encontrado hoy en la puerta de mi piso</Text>
+        <Date id="2">23/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="37" isActive="false" isSendByPerson="true">
+        <Text id="1">Algún vecino ha dejado un tupper calentito con una nota</Text>
+        <Date id="2">23/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="38" isActive="false" isSendByPerson="true">
+        <Text id="1">“Sé que lo estás dando todo, deja que yo te dé un poco”</Text>
+        <Date id="2">23/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="39" isActive="false" isSendByPerson="true">
+        <Text id="1">¿Qué te apuestas que ha sido Claudia? Estoy segura que ha sido Claudia</Text>
+        <Date id="2">23/03/2020</Date>
+        <Answer id="1" isActive="false">Esa señora es un amor</Answer>
+        <Answer id="2" isActive="false">Ayyy que bien ¿no?</Answer>
+      </Message>
+      <Message id="40" isActive="false" isSendByPerson="true">
+        <Text id="1">No he comido nada así desde la última vez que estuve en la casa de mis padres</Text>
+        <Date id="2">23/03/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="41" isActive="false" isSendByPerson="true">
+        <Text id="1">¿Te apetece si hacemos videollamada mientras como?</Text>
+        <Date id="2">23/03/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="42" isActive="false" isSendByPerson="true">
+        <Text id="1">Los días pasan y a veces tengo la sensación de que ni siquiera estoy aqui</Text>
+        <Date id="2">29/03/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="43" isActive="false" isSendByPerson="true">
+        <Text id="1">Entro al hospital y trabajo sin prestar mucha atención a lo que hago</Text>
+        <Date id="2">29/03/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="44" isActive="false" isSendByPerson="true">
+        <Text id="1">Es como si no fuese capaz de reaccionar a lo que ocurre</Text>
+        <Date id="2">29/03/2020</Date>
+        <Answer id="1" isActive="false">Cariño… Yo lo poco que puedo hacer por ti es animarte, pero a veces me frustro porque noto que no es suficiente, lo siento mucho</Answer>
+        <Answer id="2" isActive="false">Tú eres capaz de esto y mucho más, lo has demostrado hasta ahora. Es normal que te sientas así en una situación tan excepcional como esta</Answer>
+        <Answer id="3" isActive="false">Esperemos que esto no dure mucho más, nadie se tendría que sentir como tú estás ahora. Te quiero mucho, si quieres por la noche hacemos videollamada o algo</Answer>
+      </Message>
+      <Message id="45" isActive="false" isSendByPerson="true">
+        <Text id="1">Hey</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="46" isActive="false" isSendByPerson="true">
+        <Text id="1">No todo sale mal en este puto infierno</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="47" isActive="false" isSendByPerson="true">
+        <Text id="1">Hoy ha salido el primer paciente de la UCI</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="48" isActive="false" isSendByPerson="true">
+        <Text id="1">Verle salir por la puerta… Ver a la familia aliviada llorando a su lado, no por tristeza si no por alegría</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="49" isActive="false" isSendByPerson="true">
+        <Text id="1">Me hace recordar porque quería ser médica desde pequeña</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="50" isActive="false" isSendByPerson="true">
+        <Text id="1">Me siento como si por solo ver esto puedo con todo lo que me echen encima</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="51" isActive="false" isSendByPerson="true">
+        <Text id="1">Aunque cuando camino voy haciendo un poco una S</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="52" isActive="false" isSendByPerson="true">
+        <Text id="1">Tengo tantas ganas de hablar y de estar contigo</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Vale</Answer>
+      </Message>
+      <Message id="53" isActive="false" isSendByPerson="true">
+        <Text id="1">Pero a la vez me cuesta hasta escribir</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">Descansa, te lo mereces. Si quieres te llamo por la mañana cuando desayunes. Todo va bien gracias a tí.</Answer>
+        <Answer id="1" isActive="false">Creo que podrías rendir más dadas las circunstancias, pero bueno, allá tú.</Answer>
+      </Message>
+      <Message id="54" isActive="false" isSendByPerson="true">
+        <Text id="1">Eres el mejor ♡</Text>
+        <Date id="2">02/04/2020</Date>
+        <Answer id="1" isActive="false">♡</Answer>
+      </Message>
+      <Message id="55" isActive="false" isSendByPerson="true">
+        <Text id="1">Me siento extraña desde que esto empezó</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="56" isActive="false" isSendByPerson="true">
+        <Text id="1">Antes nos pasábamos la noche tumbados en el sofá, viendo una sería o hablando de cualquier chorrada que se nos pasase por la cabeza. Oír tu voz llenaba un vacío en esta casa</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="57" isActive="false" isSendByPerson="true">
+        <Text id="1">Y ahora es como si estuviera sorda porque lo único que puedo escuchar es el silencio</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="58" isActive="false" isSendByPerson="true">
+        <Text id="1">Recuerdo la última vez que vi tu rostro cuando abrí los ojos por la mañana</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="59" isActive="false" isSendByPerson="true">
+        <Text id="1">Ahora tengo miedo de que esa haya sido la última vez</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false">Pero a ver amor ya sabes que cuando quieras puedes hacer videollamada y nos vemos y hablamos todo lo que quieras hablar. Cuando todo esto acabe nos tomaremos las vacaciones merecidas que buscábamos :D</Answer>
+        <Answer id="2" isActive="false">Yo también te echo mucho de menos y tengo ganas de que todo vuelva a la normalidad</Answer>
+        <Answer id="3" isActive="false">Estoy seguro de que todo esto pasará pronto, la cosa no puede ir a peor jajajja</Answer>
+      </Message>
+      <Message id="60" isActive="false" isSendByPerson="true">
+        <Text id="1">Hay una sensación de fragilidad que inunda el cuerpo cuando ves tu reflejo en los ojos inertes de otra persona</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="61" isActive="false" isSendByPerson="true">
+        <Text id="1">Lo siento, a penas he podido dormir</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false">♡</Answer>
+      </Message>
+      <Message id="62" isActive="false" isSendByPerson="true">
+        <Text id="1">A las 5 de la mañana un paciente estaba perdiendo el pulso</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="63" isActive="false" isSendByPerson="true">
+        <Text id="1">Estuve dos horas junto con los otros médicos intentando mantenerlo a nuestro lado…</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="64" isActive="false" isSendByPerson="true">
+        <Text id="1">Pero al final todo ya estaba decidido</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="65" isActive="false" isSendByPerson="true">
+        <Text id="1">El resto se habían ido al pasillo. Benito estaba temblando cuando salió</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="66" isActive="false" isSendByPerson="true">
+        <Text id="1">Yo me quede quieta delante del cuerpo</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="67" isActive="false" isSendByPerson="true">
+        <Text id="1">No sé cuánto tiempo pasó</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="68" isActive="false" isSendByPerson="true">
+        <Text id="1">Cogí la máscara y los tubos del respirador. Los limpie</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="69" isActive="false" isSendByPerson="true">
+        <Text id="1"> Salí al pasillo y le dije a Verónica que trajera a uno de los pacientes de la UCI que no tuviese respirador y lo trajera</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false">Dios mío… No sé qué decir. ¿No había otra solución? No entiendo de estas cosas, lo siento</Answer>
+        <Answer id="2" isActive="false">No me lo creo… Es muy fuerte por lo que debes estar pasando</Answer>
+      </Message>
+      <Message id="70" isActive="false" isSendByPerson="true">
+        <Text id="1">No sé si podré con esta sensación</Text>
+        <Date id="2">08/04/2020</Date>
+        <Answer id="1" isActive="false">Era lo que tenías que hacer, es tu trabajo. No te tienes que sentir culpable y nadie te puede culpar. Tienes todo mi apoyo y comprensión</Answer>
+      </Message>
+      <Message id="71" isActive="false" isSendByPerson="true">
+        <Text id="1">Tenemos que hablar</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="72" isActive="false" isSendByPerson="true">
+        <Text id="1">Estos últimos días han sido un no parar, de trabajar, de emociones, de todo</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="73" isActive="false" isSendByPerson="true">
+        <Text id="1">Pero al final he tenido unos días libres y he tenido tiempo para pensar, incluso demasiado tiempo, la cabeza me da vueltas</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="74" isActive="false" isSendByPerson="true">
+        <Text id="1">Todo este último mes tenía la sensación de ir contra todo lo que el mundo podía echarme encima, todos los pacientes, todos los enfermos, las muertes, y lo peor de todo es que he tenido sensación de que todo esto lo he estado aguantando yo sola</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="75" isActive="false" isSendByPerson="true">
+        <Text id="1">Me temblaba el cuerpo la mitad del tiempo y algunos días me pasaba horas llorando en una esquina hasta que me dolía el culo. Y casi nunca has estado ahí</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="76" isActive="false" isSendByPerson="true">
+        <Text id="1">La mayoría de las veces que hemos hablado ha sido porque yo necesitaba desahogarme y tu lo que has hecho es enviarme un qué tal alguna que otra vez</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="77" isActive="false" isSendByPerson="true">
+        <Text id="1">No sé si como me siento por dentro esta bien, pero es que toda esta mezcla de emociones que siento por tí…</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="78" isActive="false" isSendByPerson="true">
+        <Text id="1">Creo que sería mejor si lo dejamos por un tiempo</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="79" isActive="false" isSendByPerson="true">
+        <Text id="1">Necesito un tiempo para entender todo esto, y aunque me he sentido sola todo este tiempo, necesito estarlo otra vez para tener espacio para entender cómo me siento y quien soy</Text>
+        <Date id="2">15/04/2020</Date>
+        <Answer id="1" isActive="false">Es difícil gestionar todo esto, y más estando sola, te comprendo. Si crees que es lo mejor para ti te doy todo el espacio que necesites. Tienes todo mi apoyo</Answer>
+        <Answer id="2" isActive="false">Hola Alex, no sé bien qué decir… Espero que estés mejor tomándote tu espacio y siento que te hayas sentido así, podría haberlo hecho mejor. Te echaré de menos</Answer>
+        <Answer id="3" isActive="false"></Answer>
+      </Message>
+      <Message id="80" isActive="false" isSendByPerson="true">
+        <Text id="1">No sé si te has enterado por algún familiar ya pero… después de que Alfonso estuviese varios días ingresado en el hospital, ha muerto</Text>
+        <Date id="2">22/05/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="81" isActive="false" isSendByPerson="true">
+        <Text id="1">Estuvimos varias horas intentando reanimarlo pero nos dejó</Text>
+        <Date id="2">22/05/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
+      </Message>
+      <Message id="82" isActive="false" isSendByPerson="true">
+        <Text id="1">Sé que erais amigos desde el instituto, lo siento mucho</Text>
+        <Date id="2">22/05/2020</Date>
+        <Answer id="1" isActive="false">Sabía que estaba grave en el hospital, pero no pensé que llegara a pasarle algo… No sé ni qué decir en esta situación. Ha sido muy repentino no me lo esperaba, estoy un poco en shock</Answer>
+      </Message>
+      <Message id="83" isActive="false" isSendByPerson="true">
+        <Text id="1">Siento tener que ser yo la que te de la noticia...</Text>
+        <Date id="2">22/05/2020</Date>
+        <Answer id="1" isActive="false">Últimamente no nos llevábamos muy bien, pero ahora veo todas las discusiones insignificantes</Answer>
+        <Answer id="1" isActive="false">Creo que voy a dejar el móvil por un tiempo y centrarme en mí mismo. Tengo que asimilar todos los que están ocurriendo en mi vida y ver qué cojones hago</Answer>
+      </Message>
+      <Message id="84" isActive="false" isSendByPerson="true">
+        <Text id="1">Espero que estés bien</Text>
+        <Date id="2">22/05/2020</Date>
+        <Answer id="1" isActive="false">No mucho, gracias por hablarme</Answer>
+      </Message>
+      <Message id="85" isActive="false" isSendByPerson="true">
+        <Text id="1">De nada</Text>
+        <Date id="2">22/05/2020</Date>
+        <Answer id="1" isActive="false"></Answer>
       </Message>
   </Person>
+  
+  
+  
+  
+  
+  
+  
+  <!--MEJOR AMIGO-->
+  
+  
+  
+  
+  
+  
+  
+  
   <Person id="3" name="Alfonso">
-    <Message id="1" isActive="false" isSendByPerson="true">
-      <Text id="1">Mare de deu, pareix que fa frescoreta eh?<!---->
-      </Text>
-      <Date id="2">
-        07:48
-      </Date>
-      <Answer id="1" isActive="false">pues si que fa si<!---->
-      </Answer>
+    <Message id="1" isActive="false" isSendByPerson="false">
+      <Text id="1">Hola Alfon, me enteré de lo de tu padre. Lo siento mucho.</Text>
+      <Date id="2">27/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
     </Message>
-    <Message id="2" isActive="false" isSendByPerson="true">
-      <Text id="1">Pues rés vaig a vore si m'vaig a casa o que collons faig, blbalblbalblablablalbalbalbalbalblablalablalbalbalblablablablablablablalbalbablallablalab, pardon, m'ha donat un ictus
-      </Text>
-      <Date id="2">
-        07:48
-      </Date>
-      <Answer id="1" isActive="false">bona nit 🤣 <!--Por si no lo sabiais, manteniendo tecla win + . se abren los emojis y funcionan en el chat👏👏😊-->
-      </Answer>
+    <Message id="2" isActive="false" isSendByPerson="false">
+      <Text id="1">Para cualquier cosa ya sabes que estoy aquí</Text>
+      <Date id="2">27/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="3" isActive="false" isSendByPerson="true">
+      <Text id="1">Gracias tío, lo aprecio mucho</Text>
+      <Date id="2">27/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="4" isActive="false" isSendByPerson="true">
+      <Text id="1">Hace un montón que no nos vemos, te parece que quedemos el finde que viene?</Text>
+      <Date id="2">27/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="5" isActive="false" isSendByPerson="false">
+      <Text id="1">Sería brutal, me apunto!</Text>
+      <Date id="2">27/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="6" isActive="false" isSendByPerson="true">
+      <Text id="1">Perfecto, ya te iré avisando</Text>
+      <Date id="2">27/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="7" isActive="false" isSendByPerson="true">
+      <Text id="1">Ey tío me enteré de que te vas de vacaciones a Tenerife!</Text>
+      <Date id="2">05/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="8" isActive="false" isSendByPerson="true">
+      <Text id="1">Yo me voy a Lisboa con unos amigos del trabajo, tengo muchas ganas!</Text>
+      <Date id="2">05/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="9" isActive="false" isSendByPerson="false">
+      <Text id="1">Buah tío qué genial, te pillaste vacaciones en el curro entonces?</Text>
+      <Date id="2">05/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="10" isActive="false" isSendByPerson="true">
+      <Text id="1">Sí, ya iba siendo hora que llevo sin un descanso desde hace mil jaja</Text>
+      <Date id="2">05/02/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="11" isActive="false" isSendByPerson="false">
+      <Text id="1">Merecido tío, me alegro mucho :D</Text>
+      <Date id="2">05/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="12" isActive="false" isSendByPerson="true">
+      <Text id="1">Ey sabes qué?</Text>
+      <Date id="2">14/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="13" isActive="false" isSendByPerson="true">
+      <Text id="1">Por la puta mierda esta de la pandemia me cancelaron los vuelos así que no iremos a Lisboa</Text>
+      <Date id="2">14/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="14" isActive="false" isSendByPerson="true">
+      <Text id="1">Además el cabrón de mi jefe pretende que vayamos a trabajar a pesar de todo esto</Text>
+      <Date id="2">14/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="15" isActive="false" isSendByPerson="true">
+      <Text id="1">No se lo cree ni é</Text>
+      <Date id="2">14/03/2020</Date>
+      <Answer id="1" isActive="false">No me lo puedo creer tío, qué putada</Answer>
+      <Answer id="2" isActive="false">Y no te devuelven el dinero ni nada?</Answer>
+    </Message>
+    <Message id="16" isActive="false" isSendByPerson="true">
+      <Text id="1">Creo que me devuelven el dinero</Text>
+      <Date id="2">14/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="17" isActive="false" isSendByPerson="true">
+      <Text id="1">Cuando se pase la tontería esta me tomaré unas vacaciones infinitas jajaj</Text>
+      <Date id="2">14/03/2020</Date>
+      <Answer id="1" isActive="false">Espero que no tarden mucho en dejarnos salir</Answer>
+      <Answer id="2" isActive="false">Espero que sea una tontería, no sé qué pensar</Answer>
+      <Answer id="3" isActive="false">Te lo tomas muy a la ligera no? jajjaja</Answer>
+    </Message>
+    <Message id="18" isActive="false" isSendByPerson="true">
+      <Text id="1">Claro tío no te rayes, esto solo lo hacen para quedar bien pero no tienen ni idea jajaj</Text>
+      <Date id="2">14/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="19" isActive="false" isSendByPerson="true">
+      <Text id="1">El otro día fui a comprar al supermercado y vi a un tipo con mascarilla</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="20" isActive="false" isSendByPerson="true">
+      <Text id="1">Qué flipado, es que llegar a ese punto es demasiado jajajja</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false">Tú crees? Están pensado en ponerla obligatoria para salir de casa</Answer>
+      <Answer id="2" isActive="false">Supongo que será por precaución</Answer>
+      <Answer id="3" isActive="false">Hay gente que se flipa un poco la verdad</Answer>
+    </Message>
+    <Message id="21" isActive="false" isSendByPerson="true">
+      <Text id="1">Si las ponen obligatorias yo seré el primero en manifestarme en contra</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="22" isActive="false" isSendByPerson="true">
+      <Text id="1">Me parece una estupidez que por no saber gestionar “el virus”</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="23" isActive="false" isSendByPerson="true">
+      <Text id="1">ahora tenemos que pagarlo nosotros</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="24" isActive="false" isSendByPerson="true">
+      <Text id="1">Todo por culpa de los chinos, como siempre…</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false">Si tú lo dices Alfon…</Answer>
+    </Message>
+    <Message id="25" isActive="false" isSendByPerson="true">
+      <Text id="1">Solo tienes que ver países de ejemplo como Reino Unido o EEUU, ahí no toman medidas porque es algo natural, hay que dejarlo pasar</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false">Supongo que allí se lo toman de otra manera</Answer>
+      <Answer id="2" isActive="false">No veo que hay de malo en querer que tu pueblo no se muer</Answer>
+    </Message>
+    <Message id="26" isActive="false" isSendByPerson="true">
+      <Text id="1">Tienes que abrir un poco la mente, mirar desde otra perspectiva más crítica</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="27" isActive="false" isSendByPerson="true">
+      <Text id="1">OJO ALERTA ????????????Transmitan esto a toda su familia, vecindad, conocidos, amigos, colegas, compañeros de trabajo… etc. etc. y su entorno en general: Si llegan a contraer el Covid-19, el cual no es un Virus como nos han hecho creer, sino una bacteria, amplificada con radiación electromagnética 5G que produce también inflamación e hipoxia, van a hacer lo siguiente: Van a tomar Aspirina de 100mg y Apronax o Paracetamol… Por qué?… porque se ha demostrado que el Covid-19 lo que hace es coagular la sangre, haciendo que la persona haga cuadro de trombosis y la sangre no fluya y no oxigene el corazón y los pulmones y la persona fallezca rápidamente por no poder respirar. En Italia mandaron al carajo el protocolo de la OMS y le hicieron la autopsia a un cadáver que murió por Covid-19, cortaron el cuerpo y abrieron los brazos y piernas y las demás secciones del cuerpo y se dieron cuenta que las venas estaban dilatadas y la sangre coagulada y todas las venas y arterias llenas de trombos, impidiendo que la sangre fluya normalmente y lleve oxígeno a todos los órganos, principalmente al cerebro, corazón y pulmones...y acabe muriendo el paciente</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false">Tío eso pinta a bulo que flipas, pareces mi tía por el grupo de la familia jajajaj</Answer>
+      <Answer id="2" isActive="false">Es una broma? De verdad crees eso?</Answer>
+    </Message>
+    <Message id="28" isActive="false" isSendByPerson="true">
+      <Text id="1">Tío de verdad no crees que tiene sentido? Es que yo estoy flipando</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="29" isActive="false" isSendByPerson="true">
+      <Text id="1">Si en algún momento cojo el bicho ese me tomo un paracetamol y ya está</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="30" isActive="false" isSendByPerson="true">
+      <Text id="1">Ves que no era pa tanto como te dije?</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false">Me parece una falta de respeto hacia los que se están currando para que todo vaya a mejor como Alex</Answer>
+      <Answer id="2" isActive="false">Informate un poco por favor, es una locura lo que estás diciendo</Answer>
+      <Answer id="3" isActive="false">Si de verdad crees todo eso, también crees que la tierra es plana o cosa de esas?</Answer>
+    </Message>
+    <Message id="31" isActive="false" isSendByPerson="true">
+      <Text id="1">Tío tampoco es pa tanto, solo es un mensaje de whatsapp</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="32" isActive="false" isSendByPerson="true">
+      <Text id="1">Solo busco otras maneras de pensar nada más, todo esto es una mierda para todos</Text>
+      <Date id="2">20/03/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="33" isActive="false" isSendByPerson="true">
+      <Text id="1">Ey</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="34" isActive="false" isSendByPerson="true">
+      <Text id="1">Yo si fuese tú no me haría la prueba del PCR</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false">Y eso?</Answer>
+    </Message>
+    <Message id="35" isActive="false" isSendByPerson="true">
+      <Text id="1">No sé en qué mundo te parece a tí buena idea meter un palo por la nariz.</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="36" isActive="false" isSendByPerson="true">
+      <Text id="1">Te daña el cerebro y te lo infecta con hongos</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false">No creo que un médico se arriesgarse a hacerte algo así</Answer>
+    </Message>
+    <Message id="37" isActive="false" isSendByPerson="true">
+      <Text id="1">Tú te crees que con lo nuevo que es esto alguien sabe llevarlo?</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false">Tu desde luego que no</Answer>
+      <Answer id="2" isActive="false">Lo médicos algo mejor que nosotros sí</Answer>
+      <Answer id="3" isActive="false">No sé tío, parece falso</Answer>
+    </Message>
+    <Message id="38" isActive="false" isSendByPerson="true">
+      <Text id="1">Y a quien le vas a hacer caso</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="39" isActive="false" isSendByPerson="true">
+      <Text id="1">A los de arriba?</Text>
+      <Date id="2">05/04/2020</Date>
+      <Answer id="1" isActive="false">A mi médico de cabecera</Answer>
+    </Message>
+    <Message id="40" isActive="false" isSendByPerson="true">
+      <Text id="1">Ey</Text>
+      <Date id="2">09/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="41" isActive="false" isSendByPerson="true">
+      <Text id="1">te apetece que después del curro me pase por tu casa?</Text>
+      <Date id="2">09/04/2020</Date>
+      <Answer id="1" isActive="false">Estas mal de la cabeza?</Answer>
+      <Answer id="2" isActive="false">No sé tío, no parece buena idea. Y si te multan?</Answer>
+      <Answer id="3" isActive="false">NO</Answer>
+    </Message>
+    <Message id="42" isActive="false" isSendByPerson="true">
+      <Text id="1">Tío no es para tanto</Text>
+      <Date id="2">09/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="43" isActive="false" isSendByPerson="true">
+      <Text id="1">Haya o no pandemia tenemos que vivir</Text>
+      <Date id="2">09/04/2020</Date>
+      <Answer id="1" isActive="false">Pues vive y deja vivir en tu casa</Answer>
+      <Answer id="2" isActive="false">NO</Answer>
+      <Answer id="3" isActive="false">Yo no me la pienso jugar</Answer>
+    </Message>
+    <Message id="44" isActive="false" isSendByPerson="true">
+      <Text id="1">Bueno vale, allá tú</Text>
+      <Date id="2">09/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="45" isActive="false" isSendByPerson="true">
+      <Text id="1">Ey</Text>
+      <Date id="2">16/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="46" isActive="false" isSendByPerson="true">
+      <Text id="1">Sabía que todo esto me olía mal</Text>
+      <Date id="2">16/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="47" isActive="false" isSendByPerson="true">
+      <Text id="1">Nos han estado tomando el pelo</Text>
+      <Date id="2">16/04/2020</Date>
+      <Answer id="1" isActive="false">Qué te pasa ahora?</Answer>
+    </Message>
+    <Message id="48" isActive="false" isSendByPerson="true">
+      <Text id="1">He leído una entrevista que me han pasado, una doctora en biomedicina</Text>
+      <Date id="2">16/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="49" isActive="false" isSendByPerson="true">
+      <Text id="1">Ella explica como es el terreno al que tiene que adaptarse para que germine el virus, y cómo los gobiernos han estado preparando la situación para que este germine. El mundo está lleno de virus, y estos son inofensivos, el problema está viniendo de dentro, de como han puesto el mundo para las personas y como nos están afectando. Nadie muere por el virus</Text>
+      <Date id="2">16/04/2020</Date>
+      <Answer id="1" isActive="false">Voy a dejarte en leído, aviso</Answer>
+      <Answer id="2" isActive="false">Callate un mes</Answer>
+      <Answer id="3" isActive="false">Por qué te crees esas cosas?</Answer>
+    </Message>
+    <Message id="50" isActive="false" isSendByPerson="true">
+      <Text id="1">Mira, yo te intento abrir los ojos, creete lo que te dé la gana y te digan los que arriba. Algunos no quieren salir de la cueva de Platón</Text>
+      <Date id="2">16/04/2020</Date>
+      <Answer id="1" isActive="false">Tienes razón</Answer>
+      <Answer id="2" isActive="false">A mi no me metas en esos rollos</Answer>
+      <Answer id="3" isActive="false">Suficiente internet por hoy</Answer>
+    </Message>
+    <Message id="51" isActive="false" isSendByPerson="true">
+      <Text id="1">Ey</Text>
+      <Date id="2">22/04/2020</Date>
+      <Answer id="1" isActive="false"></Answer>
+    </Message>
+    <Message id="52" isActive="false" isSendByPerson="true">
+      <Text id="1">¿Qué tal estás? Me enteré lo que pasó entre tú y Alex y estaba algo preocupado</Text>
+      <Date id="2">22/04/2020</Date>
+      <Answer id="1" isActive="false">No tienes de qué preocuparte, era algo que podía pasar por la situación, ya está</Answer>
+      <Answer id="2" isActive="false">Tampoco es para tanto, solo me dijo que quiere que nos demos un tiempo</Answer>
+    </Message>
+    <Message id="53" isActive="false" isSendByPerson="true">
+      <Text id="1">No seas así de pasota, ella significaba mucho para ti</Text>
+      <Date id="2">22/04/2020</Date>
+      <Answer id="1" isActive="false">Ya… Bueno la vida sigue y tampoco puedo hacer nada así que aquí estamos</Answer>
+    </Message>
+    <Message id="54" isActive="false" isSendByPerson="true">
+      <Text id="1">Mira el lado positivo, así no tendrás que echarla de menos jajajaj</Text>
+      <Date id="2">22/04/2020</Date>
+      <Answer id="1" isActive="false">Un poco pronto no crees? Jjjajajja</Answer>
+      <Answer id="1" isActive="false">Supongo…</Answer>
+    </Message>
+    <Message id="55" isActive="false" isSendByPerson="true">
+      <Text id="1">Ey. No te vas a creer lo que leí el otro día</Text>
+      <Date id="2">30/04/2020</Date>
+      <Answer id="1" isActive="false">Oh no</Answer>
+    </Message>
+    <Message id="56" isActive="false" isSendByPerson="true">
+      <Text id="1">Van a obligar a poner la vacuna contra el Covid y va a morir gente</Text>
+      <Date id="2">30/04/2020</Date>
+      <Answer id="1" isActive="false">Otra vez no</Answer>
+    </Message>
+    <Message id="57" isActive="false" isSendByPerson="true">
+      <Text id="1">Es un plan de los de arriba con el que van a conseguir esterilizar a millones de personas</Text>
+      <Date id="2">30/04/2020</Date>
+      <Answer id="1" isActive="false">Alfonso, para. Igual hizo un poco de gracia al principio. Ya no</Answer>
+    </Message>
+    <Message id="58" isActive="false" isSendByPerson="true">
+      <Text id="1">Pero lo que digo tiene sentido ¿por qué no quieres ni si quiera leerme?</Text>
+      <Date id="2">30/04/2020</Date>
+      <Answer id="1" isActive="false">Por que es una tontería lo que estás diciendo, no sé que te ha pasado últimamente pero estás mal de la cabeza</Answer>
+      <Answer id="2" isActive="false">Alfonso, estoy harto, simplemente dejemos el tema ¿vale?</Answer>
+      <Answer id="3" isActive="false">Eres un pesado. Déjame en paz</Answer>
     </Message>
   </Person>
 </Application>
