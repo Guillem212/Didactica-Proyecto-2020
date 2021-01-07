@@ -398,7 +398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n        07:48\n      "
+  m_text: 30/04/2020
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 1295937575541030272}
   - component: {fileID: 277346054620361539}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,7 +492,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7418882156119338835}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -501,9 +501,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -435, y: 0.000022888184}
+  m_AnchoredPosition: {x: -577.82434, y: 0}
   m_SizeDelta: {x: -1266.1704, y: -111.825195}
-  m_Pivot: {x: 0.38719967, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1295937575541030272
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3286163911610860551, guid: 061c327e1a8b2f949a702a76a5187ed7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0c82be06bee69e2478f414000ed12700, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -607,7 +607,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: "Mare de deu, pareix que fa frescoreta eh?\n      "
+=======
+  m_text: "Pero lo que digo tiene sentido \xBFpor qu\xE9 no quieres ni si quiera
+    leerme?"
+>>>>>>> Stashed changes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
