@@ -329,7 +329,7 @@ RectTransform:
   - {fileID: 1607628604569040081}
   - {fileID: 1607628603671752994}
   m_Father: {fileID: 1607628605555175509}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -902,7 +902,7 @@ RectTransform:
   - {fileID: 1607628604100825909}
   - {fileID: 1607628604980598952}
   m_Father: {fileID: 1607628605555175509}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1105,7 +1105,7 @@ RectTransform:
   - {fileID: 1607628604526880224}
   - {fileID: 1607628604709223371}
   m_Father: {fileID: 1607628605555175509}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1466,9 +1466,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1607628605427843359}
-  - {fileID: 1607628604657543026}
   - {fileID: 1607628604895387007}
   - {fileID: 1607628603983566641}
+  - {fileID: 1607628604657543026}
   - {fileID: 368690707150862052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2231,4 +2231,3 @@ MonoBehaviour:
   answer: {fileID: 0}
   content: {fileID: 0}
   person: {fileID: 0}
-  xmlReader: {fileID: 0}

@@ -6,26 +6,37 @@ using UnityEngine.Events;
 
 public class FillChatsScript : MonoBehaviour
 {
+    public Sprite[] faces;
+
     public GameObject chatContainer;
     private List<GameObject> chats;
     bool filled = false;
     GameObject gm;
-    // Start is called before the first frame update
 
     public void FillChats()
     {
         chats.Clear();
         foreach (Transform child in transform)
         {
-            GameObject.Destroy(child.gameObject);
+            Destroy(child.gameObject);
         }
 
         foreach (var item in XMLReader.xmlReader.Application)
         {
             chatContainer.transform.Find("Person_name").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.person_name;
-            chatContainer.transform.Find("Last_Message").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.text;
+            foreach (var m in item.Value.messages)
+            {
+                if(m.Value.isActive)
+                    chatContainer.transform.Find("Last_Message").GetComponent<TMPro.TextMeshProUGUI>().text = m.Value.text;
+            }
             chatContainer.transform.Find("Has_Unread_Message").gameObject.SetActive(item.Value.unreadMessages);
             chatContainer.transform.Find("Last_Time").GetComponent<TMPro.TextMeshProUGUI>().text = item.Value.lastMessage.messageTime;
+
+            foreach (var f in faces)
+            {
+                if(f.name == item.Value.person_name)
+                    chatContainer.transform.Find("Image").GetComponent<Image>().sprite = f;
+            }
 
             GameObject chat = Instantiate(chatContainer, transform);
 

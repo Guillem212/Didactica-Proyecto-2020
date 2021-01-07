@@ -64,8 +64,7 @@
     <Message id="11" isActive="true" isSendByPerson="true">
       <Text id="1">Bueno, por si acaso, nunca se sabe</Text>
       <Date id="2">17/03/2020</Date>
-      <Answer id="1" isActive="false">holi holi holi holi holi holiholi holiholiholiholiholiholiholi</Answer> <!--CORREGIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIR-->
-      <Answer id="2" isActive="false">holo</Answer>
+      <Answer id="1" isActive="false"></Answer>
     </Message>
     <Message id="12" isActive="false" isSendByPerson="true">
       <Text id="1">Recuerda también quitarte los zapatos antes de entrar en tu piso y lavar toda la ropa que es super importante.</Text>
@@ -229,7 +228,7 @@
   
   
   
-    <Person id="2" name="Love">
+    <Person id="2" name="Amor">
       <Message id="1" isActive="true" isSendByPerson="true"> 
         <Text id="1">15 días cariño</Text>
         <Date id="2">06/03/2020</Date>
