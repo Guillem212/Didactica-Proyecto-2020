@@ -716,26 +716,6 @@ PrefabInstance:
       propertyPath: chatContainer
       value: 
       objectReference: {fileID: 2825782745986976246, guid: b1a963056ad9ff344a8165635fda2129, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a282cfb5547207b46acb90846819782c, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 533b35764dd9c844e9d14630b59a1506, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: 96f51eedcace0274199bf605c48c535b, type: 3}
-    - target: {fileID: 4479889626375321263, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
-      propertyPath: faces.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: b4185852458f7b24488f5adeedb38d6d, type: 3}
     - target: {fileID: 4479889626562665939, guid: 55cb7867d99eab84bbf1b34fb89b7086, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

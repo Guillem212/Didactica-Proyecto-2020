@@ -151,7 +151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8916262008176040201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 30/04/2020
+  m_text: "\n        07:48\n      "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 1295937575541030272}
   - component: {fileID: 277346054620361539}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 533b35764dd9c844e9d14630b59a1506, type: 3}
+  m_Sprite: {fileID: 3286163911610860551, guid: 061c327e1a8b2f949a702a76a5187ed7, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -607,8 +607,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pero lo que digo tiene sentido \xBFpor qu\xE9 no quieres ni si quiera
-    leerme?"
+  m_text: "Pues r\xE9s vaig a vore si m'vaig a casa o que collons faig, blbalblbalblablablalbalbalbalbalblablalablalbalbalblablablablablablablalbalbablallablalab,
+    pardon, m'ha donat un ictus\n      "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
   m_sharedMaterial: {fileID: 3689140707993702433, guid: 7522ba7613a26894aae938de742fe67c, type: 2}
