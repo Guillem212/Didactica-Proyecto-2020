@@ -9,6 +9,21 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource source;
 
+    public static AudioManager audioManager;
+
+    private void Awake()
+    {
+        if (audioManager == null)
+        {
+            audioManager = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     public void PlayClick()
     {
         source.clip = clickSound;

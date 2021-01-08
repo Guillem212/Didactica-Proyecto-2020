@@ -25,7 +25,6 @@ public class FillChatWithMessages : MonoBehaviour
 
     public void FillChatWithMsg(string name)
     {
-        print(name);
         foreach (Transform child in transform) //Limpiar chat anterior
         {
             Destroy(child.gameObject);
@@ -61,7 +60,9 @@ public class FillChatWithMessages : MonoBehaviour
                         }
                         #endregion
 
-                        received_msg.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = modified_msg;
+                        received_msg.transform.Find("bg_image").transform.Find("msg_text").GetComponent<TMPro.TextMeshProUGUI>().text = modified_msg;
+                        received_msg.transform.Find("bg_image").transform.Find("time_text").GetComponent<TMPro.TextMeshProUGUI>().text = msginChat.Value.messageTime;
+
                         GameObject msg = Instantiate(received_msg, transform);
 
                         RectTransform rt = msg.transform.Find("bg_image").GetComponent<RectTransform>();
@@ -97,6 +98,7 @@ public class FillChatWithMessages : MonoBehaviour
                             #endregion
 
                             your_msg.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = modified_ans;
+
                             GameObject msg_ans = Instantiate(your_msg, transform);
                             RectTransform rt_ans = msg_ans.transform.Find("bg_image").GetComponent<RectTransform>();
                             msg_ans.transform.Find("bg_image").GetComponent<RectTransform>().offsetMin = new Vector2(Mathf.Clamp(1200 - ans.Value.text.Length * WIDTH_PER_CHAR, 453, 1200), rt_ans.offsetMin.y);

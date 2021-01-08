@@ -18,6 +18,7 @@ public class FillAnswers : MonoBehaviour
 
     public void SetKeys(int msg_k, int ans_k)
     {
+        AudioManager.audioManager.PlayClick();
         msg_KEY = msg_k;
         ans_KEY = ans_k;
     }
@@ -26,6 +27,7 @@ public class FillAnswers : MonoBehaviour
     {
         if (msg_KEY != -1 && ans_KEY != -1)
         {
+            AudioManager.audioManager.PlaySend();
             foreach (var item in XMLReader.xmlReader.Application)
             {
                 if (item.Value.person_name.Equals(person.text))
@@ -70,7 +72,6 @@ public class FillAnswers : MonoBehaviour
                         //Answers containers
                         foreach (var ans in item.Value.messages[msg.Key - 1].answers)
                         {
-                            print(ans.Value.isSelected);
                             #region Adjust text to fit the container 
                             int m_cont_sl = 0;
                             int m_cont_ch = 0;

@@ -9,12 +9,14 @@ public class MainMenu : MonoBehaviour
     public GameObject appBase;
     public void StartGame(string sceneName) //El nombre se le pasa desde el botón
     {
+        AudioManager.audioManager.PlayClick();
         appBase.SetActive(true);
         menu.SetActive(false);
     }
 
     public void ExitGame()
     {
+        AudioManager.audioManager.PlayClick();
         Application.Quit();
     }
 }

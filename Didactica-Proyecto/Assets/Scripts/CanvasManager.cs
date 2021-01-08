@@ -33,6 +33,7 @@ public class CanvasManager : MonoBehaviour
 
     public void ChangeToNextCanvas(string name)
     {
+        AudioManager.audioManager.PlayClick();
         //Change to the canvas that belong to the correspondig chat clicked.
         app_Base.SetActive(!app_Base.activeInHierarchy);
         chat_Base.SetActive(!chat_Base.activeInHierarchy);
@@ -50,7 +51,7 @@ public class CanvasManager : MonoBehaviour
 
     public void OpenCloseSendContainer()
     {
-
+        AudioManager.audioManager.PlayClick();
         sendContainer.SetActive(!sendContainer.activeInHierarchy);
         sendContainerOpened.SetActive(!sendContainerOpened.activeInHierarchy);
 
