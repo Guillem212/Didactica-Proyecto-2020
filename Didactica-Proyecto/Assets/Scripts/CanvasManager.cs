@@ -24,6 +24,11 @@ public class CanvasManager : MonoBehaviour
         {
             Destroy(this);
         }
+            //Set screen size for Standalone
+#if UNITY_STANDALONE
+        Screen.SetResolution(564, 960, false);
+        Screen.fullScreen = false;
+#endif
     }
     private void Start()
     {

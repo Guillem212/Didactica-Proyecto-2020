@@ -30,7 +30,7 @@ public class XMLReader : MonoBehaviour
     public void GetChats(ref Dictionary<int, S_Chat> application)
     {
         //Load xml
-        XDocument xdoc = XDocument.Load("Assets/APP_XML/Chats.xml");
+        XDocument xdoc = XDocument.Parse(Resources.Load<TextAsset>("Chats").ToString());
 
         //Run query
         var persons = from person in xdoc.Descendants("Person")
@@ -63,7 +63,7 @@ public class XMLReader : MonoBehaviour
         Dictionary<int, S_Messages> messagesList = new Dictionary<int, S_Messages>();
 
         //Load xml
-        XDocument xdoc = XDocument.Load("Assets/APP_XML/Chats.xml");
+        XDocument xdoc = XDocument.Parse(Resources.Load<TextAsset>("Chats").ToString());
 
         //Run query
         var persons = from person in xdoc.Descendants("Person")
@@ -118,7 +118,7 @@ public class XMLReader : MonoBehaviour
         string person_id = personID.ToString();
 
         //Load xml
-        XDocument xdoc = XDocument.Load("Assets/APP_XML/Chats.xml");
+        XDocument xdoc = XDocument.Parse(Resources.Load<TextAsset>("Chats").ToString());
 
         //Run query
         var persons = from person in xdoc.Descendants("Person")
